@@ -17,12 +17,18 @@ public class Account {
     }
 
     //set bank balance
-    public void setAccountBalance(double balance){
-        this.balance = balance;
+    public void deposit(double amount){
+        balance = balance + amount;
+        getBalance();
+    }
+
+    public void withdraw(double amount){
+        balance = balance - amount;
+        getBalance();
     }
 
     //gets account balance
-    public double getBalance(){
-        return balance;
+    public void getBalance(){
+        System.out.println("Your account balance is currently" + balance);
     }
 }
