@@ -34,6 +34,7 @@ public class Account {
 
     //gets account balance
     public void getBalance(){
-        System.out.println("Your account balance is currently" + balance);
+        String accountBalance = String.format("%.2f", balance);
+        System.out.println("Your account balance is currently $" + accountBalance);
     }
 }

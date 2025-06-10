@@ -11,7 +11,7 @@ public class Main {
 
         while (running){
             System.out.println("\nMenu:");
-            System.out.println("1. Check Balance");
+            System.out.println("1. Check Account Balance");
             System.out.println("2. Deposit Money");
             System.out.println("3. Withdraw Money");
             System.out.println("4. Exit");
