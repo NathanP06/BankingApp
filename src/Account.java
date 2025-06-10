@@ -23,8 +23,13 @@ public class Account {
     }
 
     public void withdraw(double amount){
-        balance = balance - amount;
-        getBalance();
+        if(balance - amount > 0){
+            balance = balance - amount;
+            getBalance();
+        }
+        else{
+            System.out.println("Insufficient Funds: Attempted to withdrawal " + amount + ". Actual Balance: " + balance + ".");
+        }
     }
 
     //gets account balance
