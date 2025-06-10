@@ -1,8 +1,8 @@
 import java.util.ArrayList;
 
 public class Customer {
-    private String name;
-    private String ssn;
+    private final String name;
+    private final String ssn;
     private ArrayList<Account> accounts;
 
     public Customer(String name, String ssn){
@@ -13,6 +13,14 @@ public class Customer {
 
     public void addAccount(Account account) {
         accounts.add(account);
+    }
+
+    public ArrayList<Account> getAccounts(){
+        return accounts;
+    }
+
+    public String getName(){
+        return name;
     }
 
     public String getSSN(){
